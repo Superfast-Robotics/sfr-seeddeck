@@ -1,0 +1,40 @@
+/* Original Ask composition, with quiet callouts above each allocation. */
+.ask-slide .slide-title { top:153px; }
+.ask-raise { position:absolute; left:64px; top:272px; font:400 190px/.98 var(--font-body); letter-spacing:-.075em; font-variant-numeric:tabular-nums; }
+.ask-raise span { color:var(--accent); }
+.ask-funding { position:absolute; left:650px; right:64px; top:182px; height:220px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:32px; }
+.ask-fund { position:relative; min-width:0; }
+.ask-fund-label { color:#c9d0e2; font:400 22px/1.2 var(--font-body); letter-spacing:-.025em; }
+.ask-fund-detail { margin-top:11px; color:#8f9cb7; font:400 17px/1.35 var(--font-body); letter-spacing:-.02em; }
+.ask-fund-amount { position:absolute; top:120px; left:0; color:var(--ink); font:400 72px/1 var(--font-body); letter-spacing:-.065em; font-variant-numeric:tabular-nums; }
+.ask-fund-leader { position:absolute; left:-16px; top:54px; width:1px; height:90px; background:linear-gradient(0deg,#8194ff22,#8194ffb3); transform-origin:bottom center; }
+.ask-fund-leader:before { content:''; position:absolute; left:0; top:0; width:9px; height:1px; background:#8194ffb3; }
+.ask-allocation-meter { position:absolute; left:650px; right:64px; top:450px; height:3px; display:flex; gap:5px; }
+.ask-allocation-meter i { display:block; background:var(--accent); }
+.ask-allocation-meter i:nth-child(1) { flex:10; }
+.ask-allocation-meter i:nth-child(2) { flex:5; background:#b9c4ff; }
+.ask-allocation-meter i:nth-child(3) { flex:2; background:#7488dd; }
+.ask-allocation-meter i:nth-child(4) { flex:3; background:#e1e5ff; }
+.ask-milestone-label { position:absolute; left:64px; top:527px; color:#a9afbd; font:500 16px/1.3 var(--font-label); letter-spacing:.1em; text-transform:uppercase; }
+.ask-timeline { position:absolute; top:572px; left:64px; right:64px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:48px; list-style:none; padding:0; margin:0; }
+.ask-timeline:before { content:''; position:absolute; top:7px; left:0; right:0; height:1px; background:linear-gradient(90deg,#8194ffb0,#8194ff45); }
+.ask-timeline li { position:relative; padding-top:39px; }
+.ask-timeline li:before { content:''; position:absolute; top:0; left:0; width:15px; height:15px; border-radius:50%; background:var(--accent); border:4px solid var(--bg); box-shadow:0 0 0 1px #8194ff85; }
+.ask-month { margin:0 0 17px; font:400 43px/1 var(--font-display); letter-spacing:-.03em; }
+.ask-month span { font-size:31px; color:#c4c6cf; }
+.ask-target { font:400 30px/1.25 var(--font-body); letter-spacing:-.035em; }
+.ask-context { margin-top:15px; color:#a5adbe; font:400 19px/1.35 var(--font-body); letter-spacing:-.02em; }
+.ask-context-accent { color:#aab9ff; }
+.ask-slide.is-active ~ .deck-controls .control-hint { visibility:hidden; }
+.ask-slide.is-active .ask-raise,
+.ask-slide.is-active .ask-milestone-label,
+.ask-slide.is-active .ask-timeline { animation:content-enter .85s cubic-bezier(.16,1,.3,1) both; }
+.ask-slide.is-active .ask-fund-leader { animation:ask-leader-rise .75s cubic-bezier(.22,1,.36,1) both; animation-delay:calc(.15s + var(--fund-order)*.1s); }
+.ask-slide.is-active .ask-fund-label,
+.ask-slide.is-active .ask-fund-detail { animation:ask-callout-reveal .65s ease both; animation-delay:calc(.5s + var(--fund-order)*.1s); }
+.ask-slide.is-active .ask-timeline { animation-delay:.22s; }
+@keyframes ask-leader-rise { from { transform:scaleY(0); opacity:0; } to { transform:scaleY(1); opacity:1; } }
+@keyframes ask-callout-reveal { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+#deck.motion-paused .ask-slide * { animation:none!important; }
+@media (prefers-reduced-motion:reduce) { #deck:not(.motion-enabled) .ask-slide * { animation:none!important; } }
+@media print { .ask-slide * { animation:none!important; } }
