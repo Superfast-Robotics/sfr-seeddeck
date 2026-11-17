@@ -1,0 +1,29 @@
+/* This column shares the existing lattice's clock; the sculpture stays unchanged. */
+.benchmark-with-metrics .benchmark-metrics {
+  --compression:1;
+  position:absolute;left:682px;top:207px;width:302px;z-index:2;
+  color:var(--ink);pointer-events:none;
+}
+.benchmark-metric-label {
+  margin:0;font:500 12px/1.2 var(--font-label);letter-spacing:.12em;color:#8c98b2;
+}
+.benchmark-metric-size { display:flex;align-items:baseline;gap:9px;margin:13px 0 0;white-space:nowrap; }
+.benchmark-metric-size strong {
+  font:400 84px/1.03 var(--font-body);letter-spacing:-.065em;
+  font-variant-numeric:tabular-nums;
+  color:color-mix(in srgb,var(--ink),var(--accent) calc(var(--compression)*100%));
+}
+.benchmark-metric-size>span { font:400 31px/1 var(--font-body);letter-spacing:-.04em;color:#aab6d3; }
+.benchmark-metric-track { position:relative;height:1px;margin-top:22px;background:#333d53; }
+.benchmark-metric-track:before { content:'';position:absolute;left:0;top:0;width:100%;height:1px;background:var(--accent);transform:scaleX(var(--compression));transform-origin:left; }
+.benchmark-metric-track i { position:absolute;left:calc(var(--compression)*(100% - 5px));top:-2px;width:5px;height:5px;border-radius:50%;background:#b8c7ff;box-shadow:0 0 10px #8194ff66; }
+.benchmark-metric-stage { display:flex;justify-content:space-between;align-items:center;gap:9px;margin:10px 0 0;font:400 12px/1.2 var(--font-body);letter-spacing:-.02em;color:#7b87a1; }
+.benchmark-metric-stage>span:first-child { color:color-mix(in srgb,#d5ddef,#7b87a1 calc(var(--compression)*100%)); }
+.benchmark-metric-stage>span:last-child { color:color-mix(in srgb,#7b87a1,#aabaff calc(var(--compression)*100%)); }
+.benchmark-metric-stage>b { font-weight:400;color:#526080; }
+.benchmark-metric-speed { display:flex;align-items:baseline;gap:13px;margin:28px 0 0;white-space:nowrap; }
+.benchmark-metric-speed>span { font:400 20px/1.2 var(--font-body);letter-spacing:-.035em;color:#a4aec3; }
+.benchmark-metric-speed>strong { font:400 51px/1 var(--font-body);letter-spacing:-.06em;font-variant-numeric:tabular-nums; }
+.benchmark-metric-speed>b { margin-left:-10px;font:400 36px/1 var(--font-body);letter-spacing:-.04em;color:#aab6d3; }
+.benchmark-metric-footnote { position:absolute;left:64px;bottom:88px;margin:0;font:400 12px/1.4 var(--font-body);letter-spacing:-.015em;color:#7e899e; }
+@supports not (color:color-mix(in srgb,black,white)) { .benchmark-metric-size strong,.benchmark-metric-stage>span:last-child { color:var(--accent); } }

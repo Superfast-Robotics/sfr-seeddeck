@@ -194,6 +194,7 @@
       const update = (time) => {
         const cycle = time % 8.8;
         const compression = smooth(1.65, 3.7, cycle) * (1 - smooth(5.25, 7.85, cycle));
+        window.SFRBenchmarkMetrics?.sync(compression);
         const pulse = Math.sin(time * 3.4) * .5 + .5;
         sculpture.rotation.set(.08 + Math.sin(time * .23) * .08, time * .16 + .23, Math.sin(time * .19) * .045);
         sculpture.position.y = Math.sin(time * .72) * .065;

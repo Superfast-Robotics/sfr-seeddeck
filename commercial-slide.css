@@ -8,7 +8,9 @@
 .commercial-lane h3 { height:112px; margin-top:25px; font:400 58px/1.12 var(--font-body); letter-spacing:-.045em; white-space:nowrap; }
 .commercial-lane h3 span { display:block; margin-top:17px; color:#929eb8; font:400 22px/1.25 var(--font-body); letter-spacing:-.015em; }
 .lane-discussion { margin-top:14px; color:#aab9ff; font:400 26px/1.25 var(--font-body); letter-spacing:-.025em; }
-.lane-prospects { margin-top:22px; color:#919bad; font:400 19px/1.5 var(--font-body); letter-spacing:-.02em; }
+.lane-prospects-label {margin-top:22px;color:#74829e;font:500 12px/1.2 var(--font-label);letter-spacing:.09em;text-transform:uppercase}
+.lane-prospects { margin-top:10px; color:#a5afc2; font:400 20px/1.65 var(--font-body); letter-spacing:-.02em; }
+.lane-prospects span {display:block}
 .commercial-stack { position:absolute; left:64px; right:64px; top:713px; height:81px; border-top:1px solid #303a51; display:flex; align-items:flex-end; justify-content:center; gap:32px; color:#bdc7df; font:400 28px/1 var(--font-body); letter-spacing:-.025em; }
 .commercial-stack i { width:166px; height:1px; margin-bottom:13px; background:#596a9d; }
 .stack-signal { position:absolute; left:0; top:-1px; height:2px; width:70px; background:#9fb0ff; box-shadow:0 0 13px #8194ff88; }
