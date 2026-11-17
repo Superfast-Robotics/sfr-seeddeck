@@ -4,7 +4,7 @@
   'use strict';
   if (!window.SFRMotion) return;
   window.SFRMotion.register({
-    slideId:'slide-12',
+    slideId: document.querySelector('.security-slide')?.id,
     host:'.security-visual',
     label:'Concept: on-device intelligence continues inside an encrypted boundary after an external network link disconnects.',
     build(T,width,height) {

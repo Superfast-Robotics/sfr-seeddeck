@@ -4,7 +4,7 @@
   if (!window.SFRMotion) return;
 
   window.SFRMotion.register({
-    slideId: 'slide-6',
+    slideId: document.querySelector('.solution-slide')?.id,
     host: '.onboard-animation',
     label: 'A compact chip assembles above a circuit board as light moves through its circuits.',
     build(THREE, width, height) {

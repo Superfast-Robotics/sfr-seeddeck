@@ -4,7 +4,7 @@
   if (!window.SFRMotion) return;
 
   window.SFRMotion.register({
-    slideId: 'slide-7',
+    slideId: document.querySelector('.origin-slide')?.id,
     host: '.compression-animation',
     build(THREE, width, height) {
       const scene = new THREE.Scene();

@@ -1,0 +1,29 @@
+.landscape-kicker{position:absolute;left:64px;top:138px;margin:0;color:#8e9cc0;font:500 14px/1.2 var(--font-label);letter-spacing:.13em}
+.landscape-title{position:absolute;left:64px;top:176px;margin:0;font:400 78px/1.04 var(--font-display);letter-spacing:-.035em;color:#f5f2eb}
+.landscape-title em{color:#a8b8ff;font-weight:400}
+.landscape-count{position:absolute;right:64px;top:194px;margin:0;text-align:right;color:#8f9ab2;font:400 15px/1.2 var(--font-body)}
+.landscape-count strong{display:block;margin-bottom:5px;color:#c9d3ff;font:400 33px/1 var(--font-body);letter-spacing:-.04em}
+.landscape-legend{position:absolute;left:66px;top:269px;display:flex;gap:27px;font:400 17px/1 var(--font-body);color:#b1bacf}
+.landscape-legend span{display:flex;align-items:center;gap:9px}
+.landscape-legend i{display:inline-block;width:8px;height:8px;border-radius:50%}
+.lc-key-vla{background:#8194ff}.lc-key-wam{background:#66d7cf}.lc-key-agent{background:#f0bb76}.lc-key-other{background:#9b9da9}
+.landscape-score-chart,.landscape-size-chart{position:absolute;left:64px;top:311px;width:1472px;height:440px;overflow:visible;font-family:var(--font-body)}
+.landscape-size-chart{top:313px;height:480px}
+.lc-grid{stroke:#cbd6ff;stroke-opacity:.13;stroke-width:1}.lc-axis{stroke:#8695b5;stroke-opacity:.45;stroke-width:1}
+.lc-tick{fill:#8f9cb8;font-size:17px;font-weight:400}.lc-panel-name{fill:#e0e5f5;font-size:22px;font-weight:500;letter-spacing:-.03em}.lc-panel-detail{fill:#7f8da9;font-size:16px}
+.lc-point{color:#8194ff;transform-box:fill-box;transform-origin:center;opacity:1}.lc-point circle{fill:currentColor;fill-opacity:.9;stroke:#08090c;stroke-width:2}
+.lc-wam{color:#66d7cf}.lc-agent{color:#f0bb76}.lc-other,.lc-planner{color:#9b9da9}
+.landscape-slide svg a:hover circle,.landscape-slide svg a:focus circle{stroke:#f4f2ee;stroke-width:3;fill-opacity:1}
+.lc-label{fill:#d4dcec;font-size:17px;font-weight:400;letter-spacing:-.02em;paint-order:stroke;stroke:#08090c;stroke-width:6px;stroke-linejoin:round}
+.lc-unknown-band{fill:#141925;stroke:#293148;stroke-width:1;stroke-dasharray:4 6}.lc-small{fill:#7c8aaa;font-size:12px;letter-spacing:.08em}
+.lc-lowerbound{fill:none;stroke:#66d7cf;stroke-width:2}
+.landscape-takeaway{position:absolute;top:764px;left:66px;display:flex;align-items:center;gap:17px;color:#ccd6f5;font:400 25px/1.1 var(--font-display);letter-spacing:-.015em}
+.landscape-rule{width:38px;height:1px;background:#8194ff}.landscape-method{position:absolute;left:66px;top:803px;margin:0;color:#7f8ca8;font:400 13px/1.3 var(--font-body)}
+.landscape-sources{position:absolute;left:66px;top:828px;display:flex;align-items:center;gap:15px;font:400 12px/1.3 var(--font-body);color:#687590}
+.landscape-sources a{color:#8c9abb;text-decoration:none}.landscape-sources a:hover{color:#d8e2ff}
+.landscape-size-note{position:absolute;right:65px;top:765px;margin:0;color:#8f9bb5;font:400 14px/1.3 var(--font-body)}
+.landscape-slide.is-active .lc-point{animation:landscape-point-enter .6s ease both;animation-delay:calc(var(--point-order)*.025s)}
+@keyframes landscape-point-enter{from{opacity:.15}to{opacity:1}}
+#deck.motion-paused .landscape-slide .lc-point{animation:none!important;opacity:1}
+@media print{.landscape-slide .lc-point{animation:none!important;opacity:1}}
+@media(prefers-reduced-motion:reduce){#deck:not(.motion-enabled) .landscape-slide .lc-point{animation:none!important;opacity:1}}

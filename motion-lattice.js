@@ -5,7 +5,7 @@
   if (!window.SFRMotion) return;
 
   window.SFRMotion.register({
-    slideId: 'slide-8',
+    slideId: document.querySelector('.benchmark-slide')?.id,
     host: '.benchmark-animation',
     build(T, width, height) {
       const scene = new T.Scene();

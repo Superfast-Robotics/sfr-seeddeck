@@ -3,7 +3,7 @@
   'use strict';
   if (!window.SFRMotion) return;
   window.SFRMotion.register({
-    slideId: 'slide-11',
+    slideId: document.querySelector('.systems-slide')?.id,
     host: '.binary-chip-animation',
     label: 'A compact binary inference chip with alternating computational cells and flowing binary signals.',
     build(T, width, height) {

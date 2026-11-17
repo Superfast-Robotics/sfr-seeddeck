@@ -16,7 +16,7 @@
     reveal('.trial-card', 0.027, 0.12, 'motion-image-reveal');
     reveal('.binary-target', 0, 0.55);
 
-    const systems = document.getElementById('slide-11');
+    const systems = document.querySelector('.systems-slide');
     if (systems) {
       const ns = 'http://www.w3.org/2000/svg';
       const svg = document.createElementNS(ns, 'svg');

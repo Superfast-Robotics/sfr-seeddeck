@@ -4,7 +4,7 @@
   if (!window.SFRMotion) return;
 
   window.SFRMotion.register({
-    slideId: 'slide-3',
+    slideId: document.querySelector('.deployment-slide')?.id,
     host: '.deployment-animation',
     label: 'A floating network of compute nodes sends signals into a compact onboard processor.',
     build(T, width, height) {
