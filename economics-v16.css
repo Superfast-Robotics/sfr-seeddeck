@@ -1,0 +1,31 @@
+/* Deliberately scoped: the product and partner slides share seed-growth.css. */
+.revenue-slide.revenue-v16 .growth-kicker {top:145px}
+.revenue-slide.revenue-v16 .growth-title {top:186px;left:64px;font-size:78px;line-height:1.04;max-width:1472px}
+.revenue-v16 .ev-pricing {position:absolute;left:68px;top:289px;display:flex;align-items:baseline;gap:10px;font:400 25px/1.4 var(--font-body);letter-spacing:-.025em;color:#a0abc1}
+.revenue-v16 .ev-pricing span {color:#e3e6ef}
+.revenue-v16 .ev-pricing i {font-style:normal;color:var(--accent);margin:0 20px;font-weight:300}
+.revenue-v16 .ev-projections {position:absolute;left:64px;right:64px;top:391px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px}
+.revenue-v16 .ev-year {position:relative;min-width:0;height:230px;border-top:1px solid #38415a;padding-top:26px}
+.revenue-v16 .ev-year-label {font:500 16px/1.2 var(--font-label);letter-spacing:.13em;color:#98a5c2}
+.revenue-v16 .ev-year h3 {margin-top:22px;font:400 108px/1 var(--font-body);letter-spacing:-.075em;font-variant-numeric:tabular-nums;color:#e9e8e1}
+.revenue-v16 .ev-year h3 span {font-size:.73em;letter-spacing:-.06em;margin-left:4px}
+.revenue-v16 .ev-margin {margin-top:23px;font:400 21px/1.3 var(--font-body);letter-spacing:-.02em;color:#8f9bb4}
+.revenue-v16 .ev-margin strong {color:#d6dbea;font-weight:400;margin-right:7px}
+.revenue-v16 .ev-year-scale {border-color:#8194ff}
+.revenue-v16 .ev-year-scale .ev-year-label,.revenue-v16 .ev-year-scale h3 {color:#a6b5ff}
+.revenue-v16 .ev-year-scale:before {content:'';position:absolute;left:0;top:-1px;width:66%;height:1px;background:#b1bfff;box-shadow:0 0 18px 2px #8194ff55}
+.revenue-v16 .ev-case-label {position:absolute;right:64px;top:354px;color:#6e7d9b;font:500 12px/1.3 var(--font-label);letter-spacing:.09em}
+.revenue-v16 .ev-bottom {position:absolute;left:64px;right:64px;top:678px;padding-top:28px;border-top:1px solid #2b3449;display:grid;grid-template-columns:1.12fr 1fr;gap:64px}
+.revenue-v16 .ev-breakeven,.revenue-v16 .ev-market {display:flex;align-items:center;gap:25px}
+.revenue-v16 .ev-breakeven strong {font:400 64px/1 var(--font-display);letter-spacing:-.04em;color:#a9b7ff}
+.revenue-v16 .ev-breakeven span {font:400 22px/1.35 var(--font-body);letter-spacing:-.025em;color:#b2bbce}
+.revenue-v16 .ev-market {justify-content:flex-end}
+.revenue-v16 .ev-market strong {font:400 47px/1 var(--font-display);letter-spacing:-.04em;color:#c1cadf}
+.revenue-v16 .ev-market span {font:400 17px/1.5 var(--font-body);letter-spacing:-.02em;color:#8794af}
+.revenue-v16 .ev-market a {font-size:13px;color:#8e9fc6;text-decoration:none;border-bottom:1px solid #3c4967}
+.revenue-v16 .ev-assumptions {position:absolute;left:66px;right:64px;bottom:78px;font:400 12px/1.4 var(--font-body);color:#6d7b98;letter-spacing:0}
+.revenue-v16.is-active .ev-year {animation:ev-reveal .8s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(.12s + var(--year)*.12s)}
+@keyframes ev-reveal {from {opacity:0;transform:translateY(12px)}to {opacity:1;transform:translateY(0)}}
+#deck.motion-paused .revenue-v16 * {animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce) {#deck:not(.motion-enabled) .revenue-v16 * {animation:none!important}}
+@media print {.revenue-v16 * {animation:none!important}}

@@ -27,3 +27,17 @@
 #deck.motion-paused .landscape-slide .lc-point{animation:none!important;opacity:1}
 @media print{.landscape-slide .lc-point{animation:none!important;opacity:1}}
 @media(prefers-reduced-motion:reduce){#deck:not(.motion-enabled) .landscape-slide .lc-point{animation:none!important;opacity:1}}
+.lc-regression{stroke:#d4ddff;stroke-width:3;stroke-opacity:.76;fill:none}
+.lc-outlook{stroke:#aabaff;stroke-width:3;stroke-dasharray:9 7;stroke-opacity:.9;fill:none}
+.lc-outlook-band{fill:#8194ff;fill-opacity:.045}
+.lc-present-divider{stroke:#8799c7;stroke-width:1.2;stroke-dasharray:4 6;stroke-opacity:.8}
+.lc-now{fill:#9caed3;font:500 11px var(--font-label);letter-spacing:.08em}
+.lc-outlook-label{fill:#8395c4;font-size:13px;letter-spacing:-.01em}
+.lc-orin-reference{stroke:#a8b9ff;stroke-width:1.5;stroke-dasharray:7 7;stroke-opacity:.6}
+.lc-reference-label{fill:#a5b7e9;font-size:14px;paint-order:stroke;stroke:#08090c;stroke-width:5px}
+.lc-axis-unit{fill:#9ba9c5;font-size:13px;letter-spacing:.07em}
+.lc-band-subtitle{fill:#c2cbe0;font-size:15px}
+.lc-muted-label{fill:#8d9ab4;font-size:13px}
+.landscape-v16.landscape-size-slide .landscape-size-chart{top:307px}
+.landscape-v16.landscape-size-slide .landscape-size-note{left:135px;right:auto;top:766px;font-size:14px}
+.landscape-v16 .lc-cloud-band{fill:#1a1b24;stroke:#65563f;stroke-opacity:.65}
