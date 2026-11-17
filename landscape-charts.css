@@ -51,3 +51,16 @@
 .landscape-v17 .lc-now{font-size:10px;letter-spacing:.04em}
 .landscape-v17.landscape-size-slide .landscape-size-note{left:154px;right:auto;top:766px;font-size:14px}
 .landscape-v17 .lc-outlook-label{font-size:12px}
+.landscape-v18 .landscape-score-chart{top:311px;height:444px}
+.landscape-v18 .landscape-size-chart{top:307px;height:480px}
+.landscape-v18 .lc-cloud-band{fill:#1a1b24;stroke:#65563f;stroke-opacity:.65}
+.landscape-v18 .lc-regression{stroke:#d7e0ff;stroke-width:3.5;stroke-opacity:.87}
+.landscape-v18 .lc-outlook{stroke:#aabaff;stroke-width:3.5;stroke-dasharray:8 7;stroke-opacity:.95}
+.landscape-v18 .lc-tick{font-size:16px}
+.landscape-v18 .lc-dated-count{fill:#7f8da9;font-size:14px}
+.landscape-v18 .lc-now{font-size:10px;letter-spacing:.04em}
+.landscape-v18.landscape-size-slide .landscape-size-note{left:154px;right:auto;top:766px;font-size:13px}
+.landscape-v18 .lc-outlook-label{font-size:12px}
+.landscape-v18 .lc-t-reference{fill:#f0bb76;font-size:24px;letter-spacing:-.035em}
+.landscape-v18 .lc-t-reference-note{fill:#9c917d;font-size:12px}
+.landscape-v18 .lc-band-separator{stroke:#65563f;stroke-opacity:.5;stroke-width:1}
