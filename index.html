@@ -47,6 +47,8 @@
   <link rel="stylesheet" href="economics-v16.css?v=20261116-v16">
   <link rel="stylesheet" href="benchmark-metrics.css?v=20261117-v18">
   <link rel="stylesheet" href="seeddeck-v24.css">
+  <link rel="stylesheet" href="seeddeck-v25-new.css">
+  <link rel="stylesheet" href="seeddeck-v25-refinements.css">
 </head>
 <body>
   <main id="viewport" aria-label="Superfast Robotics pitch presentation">
@@ -221,25 +223,64 @@
   <p class="product-intro">Ultra-light models, tuned on your data.<br>Compiler, runtime, and support. One stack.</p>
   <div class="product-core" aria-label="Turnkey on-device package"><i class="product-comet"></i><div class="core-chip"><small>SUPERFAST</small><strong>Robot Brain<br>+ Navigation</strong><span>One on-device package</span></div></div>
   <div class="product-pipeline">
-    <article class="product-step"><span>01</span><h3>Open models</h3><p>Start with the weights.</p></article>
-    <article class="product-step"><span>02</span><h3>Fine-tuning</h3><p>Adapt to your robots.</p></article>
+    <article class="product-step"><span>01</span><h3>Open models</h3><p>Open weights + deployment harness.</p></article>
+    <article class="product-step"><span>02</span><h3>Fine-tuning</h3><p>On-prem adaptation on your data.</p></article>
     <article class="product-step"><span>03</span><h3>Compiler</h3><p>Optimize for your chip.</p></article>
     <article class="product-step"><span>04</span><h3>Runtime + support</h3><p>Deploy at fleet scale.</p></article>
   </div>
 </section>
 
-      <section id="slide-16" aria-label="Slide 16" class="slide commercial-slide" data-title="Three partners. One turnkey stack." aria-hidden="true" inert>
+      <section id="slide-16" aria-label="Slide 16" class="slide flywheel-v25" data-title="Two tracks. One flywheel." aria-hidden="true" inert>
+        <p class="v25-kicker">THE FLYWHEEL / DUAL-TRACK DEPLOYMENT</p>
+        <h2 class="v25-title">Two tracks. <em>One flywheel.</em></h2>
+        <p class="v25-subtitle">Enterprise fleets drive revenue. Long-tail builders fuel the model.</p>
+
+        <div class="fw-tracks">
+          <article class="fw-track fw-enterprise">
+            <div class="fw-track-label"><span>TRACK 01 · ENTERPRISE</span><span>ANNUAL COMPANY REVENUE ≥ $10M</span></div>
+            <h3>Revenue &amp; reference.</h3>
+            <p class="fw-offer">Paid turnkey stack<span>$1M license + $600 / robot / year</span></p>
+            <p class="fw-policy"><i aria-hidden="true"></i><span>Zero data leaves the site.<br>On-prem fine-tuning.</span></p>
+            <p class="fw-target">Tier-1 OEMs &amp; fleet operators <span>· NAVER Labs, LG</span></p>
+          </article>
+          <article class="fw-track fw-builders">
+            <div class="fw-track-label"><span>TRACK 02 · BUILDERS</span><span>ANNUAL COMPANY REVENUE &lt; $10M</span></div>
+            <h3>Distribution &amp; data.</h3>
+            <p class="fw-offer">Free 0.1-bit weights<span>+ Orin NX monitoring &amp; eval harness</span></p>
+            <p class="fw-policy"><i aria-hidden="true"></i><span>Opt-in anonymized failure<br>&amp; edge-case trajectories.</span></p>
+            <p class="fw-target">AMR / bi-arm makers <span>· SIs · robotics labs</span></p>
+          </article>
+        </div>
+
+        <div class="fw-loop" role="group" aria-label="Model compounding loop, from distillation through native pre-training to better on-board brains, feeding both deployment tracks">
+          <p class="fw-loop-label">THE MODEL COMPOUNDING LOOP</p>
+          <svg class="fw-loop-lines" viewBox="0 0 1472 186" fill="none" aria-hidden="true">
+            <defs><marker id="fw-arrow-v25" viewBox="0 0 7 7" refX="5" refY="3.5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1L5 3.5L1 6" stroke="#8194ff" stroke-width="1.1"/></marker></defs>
+            <path class="fw-forward-line" d="M0 44H1472" stroke="#334261"/>
+            <path d="M330 44H349M706 44H725M1082 44H1101" stroke="#8194ff" marker-end="url(#fw-arrow-v25)"/>
+            <path class="fw-return-line" d="M1458 60V145Q1458 162 1441 162H-1Q-18 162 -18 145V52" stroke="#6273b5" marker-end="url(#fw-arrow-v25)"/>
+            <path class="fw-return-glint" d="M1458 60V145Q1458 162 1441 162H-1Q-18 162 -18 145V52" stroke="#afbcff" stroke-width="2" pathLength="1000"/>
+          </svg>
+          <ol class="fw-stages">
+            <li><span>01</span><h4>Open-model<br>distillation</h4><p>GR00T 2.0 · Alpamayo</p></li>
+            <li><span>02</span><h4>Harness + sim<br>+ human video</h4><p>Real edge cases. Broad coverage.</p></li>
+            <li class="fw-native"><span>03</span><h4>Native 0.1-bit<br>WAM pre-training</h4><p>Break the compression ceiling.</p></li>
+            <li><span>04</span><h4>Better on-board<br>brains</h4><p>Back to both deployment tracks.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="slide-17" aria-label="Slide 17" class="slide commercial-slide partners-v25" data-title="Three partners. One turnkey stack." aria-hidden="true" inert>
         <h2 class="commercial-title">Three partners. <em>One turnkey stack.</em></h2>
         <p class="commercial-subtitle">Goal: ship to 3 partners (1 Korea, 2 US) and build a turnkey solution.</p>
         <div class="commercial-partners">
-          <article class="commercial-lane"><span class="lane-number">01</span><div><h3>VLM <span>Glasses · System 2</span></h3><p class="lane-status-label">Potential customers</p><p class="lane-discussion">Amazon · Meta · Google</p></div></article>
-          <article class="commercial-lane"><span class="lane-number">02</span><div><h3>VLA <span>AMRs</span></h3><p class="lane-status-label">In discussion</p><p class="lane-discussion">NAVER Labs</p><p class="lane-prospects-label">Target accounts</p><p class="lane-prospects"><span>MiR · OTTO · Locus Robotics</span><span>Geek+ · AGILOX · OMRON</span></p></div></article>
-          <article class="commercial-lane"><span class="lane-number">03</span><div><h3>WAM <span>Humanoids, bi-arm</span></h3><p class="lane-status-label">In discussion</p><p class="lane-discussion">LG</p><p class="lane-prospects-label">Target accounts</p><p class="lane-prospects"><span>Figure · Tesla · 1X</span><span>Apptronik · Agility Robotics · Unitree</span></p></div></article>
+          <article class="commercial-lane"><span class="lane-number">01</span><div><h3>VLA <span>AMRs</span></h3><p class="lane-status-label">In discussion</p><p class="lane-discussion">NAVER Labs</p><p class="lane-prospects-label">Target accounts</p><p class="lane-prospects"><span>MiR · OTTO · Locus Robotics</span><span>Geek+ · AGILOX · OMRON</span></p></div></article>
+          <article class="commercial-lane"><span class="lane-number">02</span><div><h3>WAM <span>Humanoids, bi-arm</span></h3><p class="lane-status-label">In discussion</p><p class="lane-discussion">LG</p><p class="lane-prospects-label">Target accounts</p><p class="lane-prospects"><span>Figure · Tesla · 1X</span><span>Apptronik · Agility Robotics · Unitree</span></p></div></article>
         </div>
         <div class="commercial-stack"><span>Model</span><i></i><span>Runtime</span><i></i><span>Integration</span><b class="stack-signal" aria-hidden="true"></b></div>
       </section>
 
-      <section id="slide-17" aria-label="Slide 17" class="slide growth-slide revenue-slide revenue-v16" data-title="Ship once. Scale with every fleet." aria-hidden="true" inert>
+      <section id="slide-18" aria-label="Slide 18" class="slide growth-slide revenue-slide revenue-v16 revenue-v25" data-title="Ship once. Scale with every fleet." aria-hidden="true" inert>
   <p class="growth-kicker">THE REVENUE ENGINE</p>
   <h2 class="growth-title">Ship once. <em>Scale with every fleet.</em></h2>
   <p class="ev-pricing"><span>$1M</span> model licensing <i aria-hidden="true">+</i> <span>$600</span> per device / year</p>
@@ -255,14 +296,14 @@
     <p class="ev-breakeven"><strong>25k</strong><span>paid devices to annual<br>operating breakeven</span></p>
     <p class="ev-market"><strong>806k</strong><span>industrial installations / year by 2029<br><a href="https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally" target="_blank" rel="noopener noreferrer">IFR forecast ↗</a></span></p>
   </div>
-  <p class="ev-assumptions">Planning case: 500 / 5k / 30k average paid devices. Breakeven: $12M annual OpEx, 80% software gross margin.</p>
+  <p class="ev-assumptions">Planning case: 500 / 5k / 30k average paid devices. Breakeven: $12M annual OpEx, 80% software gross margin.<br>Dual license: free for companies &lt;$10M revenue; enterprise tier above.</p>
 </section>
 
-      <section id="slide-18" aria-label="Slide 18" class="slide ask-slide" data-title="The Ask — $16M" aria-hidden="true" inert>
+      <section id="slide-19" aria-label="Slide 19" class="slide ask-slide ask-v25" data-title="The Ask — $16M" aria-hidden="true" inert>
         <h2 class="slide-title">The Ask</h2>
         <p class="ask-raise" aria-label="Raising sixteen million US dollars"><span>$</span>16M</p>
         <div class="ask-funding" aria-label="Use of sixteen million dollars">
-          <div class="ask-fund" style="--fund-order:0"><i class="ask-fund-leader" aria-hidden="true"></i><p class="ask-fund-label">GPU compute</p><p class="ask-fund-detail">Model training &amp; delivery<br>Research</p><p class="ask-fund-amount">$8M</p></div>
+          <div class="ask-fund" style="--fund-order:0"><i class="ask-fund-leader" aria-hidden="true"></i><p class="ask-fund-label">GPU compute</p><p class="ask-fund-detail">Distillation &amp;<br>Native 0.1-bit WAM<br>pre-training</p><p class="ask-fund-amount">$8M</p></div>
           <div class="ask-fund" style="--fund-order:1"><i class="ask-fund-leader" aria-hidden="true"></i><p class="ask-fund-label">Team</p><p class="ask-fund-detail">US HQ · 4<br>Korea R&amp;D · 8</p><p class="ask-fund-amount">$3M</p></div>
           <div class="ask-fund" style="--fund-order:2"><i class="ask-fund-leader" aria-hidden="true"></i><p class="ask-fund-label">Hardware</p><p class="ask-fund-detail">Robots, sensors<br>&amp; test rigs</p><p class="ask-fund-amount">$2M</p></div>
           <div class="ask-fund" style="--fund-order:3"><i class="ask-fund-leader" aria-hidden="true"></i><p class="ask-fund-label">SG&amp;A</p><p class="ask-fund-detail">Office, travel<br>&amp; operations</p><p class="ask-fund-amount">$3M</p></div>
@@ -270,14 +311,39 @@
         <div class="ask-allocation-meter" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
         <p class="ask-milestone-label">Milestones after funding</p>
         <ol class="ask-timeline">
-          <li><h3 class="ask-month">3 <span>months</span></h3><p class="ask-target">GR00T 2.0 + Alpamayo</p><p class="ask-context">On-device inference targets</p></li>
+          <li><h3 class="ask-month">3 <span>months</span></h3><p class="ask-target">Distilled Open Stack</p><p class="ask-context">GR00T 2.0 + Alpamayo on Orin NX<br>&amp; harness release</p></li>
           <li><h3 class="ask-month">6 <span>months</span></h3><p class="ask-target">First shipment</p><p class="ask-context">To a high-volume manufacturer</p></li>
-          <li><h3 class="ask-month">12 <span>months</span></h3><p class="ask-target">Fully Autonomous Robot</p><p class="ask-context ask-context-accent">On-device reasoning + encryption</p></li>
+          <li><h3 class="ask-month">12 <span>months</span></h3><p class="ask-target">Native 0.1-bit WAM</p><p class="ask-context ask-context-accent">Pre-trained on-board brain<br>+ zero-network security</p></li>
           <li><h3 class="ask-month">18 <span>months</span></h3><p class="ask-target">Scaling</p><p class="ask-context">3 partners. Repeatable turnkey delivery.</p></li>
         </ol>
       </section>
 
-      <section id="slide-19" aria-label="Slide 19" class="slide closing-slide" data-title="Robot intelligence belongs on board" aria-hidden="true" inert>
+      <section id="slide-20" aria-label="Slide 20" class="slide capital-v25" data-title="$16M decomposed." aria-hidden="true" inert>
+        <p class="v25-kicker">CAPITAL ALLOCATION / 18-MONTH EXECUTION PLAN</p>
+        <h2 class="v25-title">$16M <em>decomposed.</em></h2>
+        <p class="v25-subtitle">Half into compute to break the compression ceiling. Half into shipping.</p>
+
+        <div class="capital-grid">
+          <article class="capital-compute">
+            <div class="capital-main-head"><div><p class="capital-category">01 / GPU COMPUTE</p><h3>$8<span>M</span></h3></div><p class="capital-half">50<span>%</span><small>OF THE ROUND</small></p></div>
+            <div class="capital-compute-bar" aria-label="GPU allocation: 2.5 million distillation, 4.5 million native pre-training, 1 million simulation and evaluation"><i></i><i></i><i></i></div>
+            <div class="capital-workstreams">
+              <div class="capital-workstream"><p class="capital-subamount">$2.5<span>M</span></p><div><div class="capital-work-head"><h4>Distillation + QAT</h4><span>M1–M6</span></div><p>GR00T 2.0, Alpamayo + partner VLA/WAM<br>to 0.1-bit on Orin NX.</p></div></div>
+              <div class="capital-workstream capital-native"><p class="capital-subamount">$4.5<span>M</span></p><div><div class="capital-work-head"><h4>Native 0.1-bit WAM</h4><span>M6–M15</span></div><p>From-scratch pre-training on web / human<br>video + harness trajectories.</p></div></div>
+              <div class="capital-workstream"><p class="capital-subamount">$1.0<span>M</span></p><div><div class="capital-work-head"><h4>Sim2Real RL + compiler eval</h4><span>M1–M18</span></div><p>High-throughput rollouts.<br>Automated multi-chip verification.</p></div></div>
+            </div>
+          </article>
+
+          <div class="capital-shipping">
+            <article class="capital-other capital-team"><header><div><p class="capital-category">02 / TEAM</p><h3>People who ship.</h3></div><p class="capital-amount">$3<span>M</span></p></header><div class="capital-detail-pair"><div><h4>US HQ · 4</h4><p>Enterprise GTM, FDE<br>&amp; systems.</p></div><div><h4>Korea R&amp;D · 8</h4><p>WAM pre-training, quantization /<br>compilers &amp; robotics control.</p></div></div></article>
+            <article class="capital-other capital-hardware"><header><div><p class="capital-category">03 / HARDWARE</p><h3>Test. Capture. Validate.</h3></div><p class="capital-amount">$2<span>M</span></p></header><div class="capital-detail-pair"><div><h4>Test rigs &amp; edge clusters</h4><p>AMR + bi-arm platforms.<br>Orin NX / Thor benchmark racks.</p></div><div><h4>Targeted data</h4><p>Low-cost handheld UMI capture<br>+ edge-case vendor sourcing.</p></div></div></article>
+            <article class="capital-other capital-operations"><header><div><p class="capital-category">04 / SG&amp;A</p><h3>Operations &amp; runway.</h3></div><p class="capital-amount">$3<span>M</span></p></header><p class="capital-ops-detail">US-Korea corporate / IP structure · SF &amp; Seoul hubs<br>On-site partner deployment.</p></article>
+          </div>
+        </div>
+        <div class="capital-inflection"><span>SERIES A / M18</span><p>Native 0.1-bit WAM live <i>·</i> 3 paid turnkey partners <i>·</i> Growing open-harness data flywheel</p></div>
+      </section>
+
+      <section id="slide-21" aria-label="Slide 21" class="slide closing-slide" data-title="Robot intelligence belongs on board" aria-hidden="true" inert>
         <div class="ambient closing-film"><video data-media="robot" data-autoplay muted loop playsinline preload="none"></video></div><div class="closing-shade"></div>
         <canvas class="cover-orbit cover-orbit-back" width="1080" height="650" aria-hidden="true"></canvas>
         <h2>Robot intelligence<br>belongs <em>on board.</em></h2>
@@ -289,7 +355,7 @@
       <footer class="deck-controls" aria-label="Presentation controls">
         <div class="control-tools"><button id="toggle-overview" type="button" title="Slide overview (O)" aria-label="Slide overview">▦</button><button id="toggle-motion" type="button" title="Pause or resume motion (P)" aria-label="Pause motion">Ⅱ</button><button id="fullscreen" type="button" title="Full screen (F)" aria-label="Full screen">⛶</button></div>
         <span class="control-hint">← → to navigate</span>
-        <div class="control-pagination"><button id="prev-slide" type="button" aria-label="Previous slide">←</button><span><span id="current-slide">01</span><span class="page-slash">/</span><span id="total-slides">20</span></span><button id="next-slide" type="button" aria-label="Next slide">→</button></div>
+        <div class="control-pagination"><button id="prev-slide" type="button" aria-label="Previous slide">←</button><span><span id="current-slide">01</span><span class="page-slash">/</span><span id="total-slides">21</span></span><button id="next-slide" type="button" aria-label="Next slide">→</button></div>
       </footer>
       <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
     </div>

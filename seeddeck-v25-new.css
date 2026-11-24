@@ -1,0 +1,87 @@
+/* The two new business-chapter slides; all selectors are scoped. */
+.flywheel-v25 .v25-kicker,.capital-v25 .v25-kicker {
+  position:absolute;left:64px;top:145px;margin:0;
+  font:500 15px/1.4 var(--font-label);letter-spacing:.12em;color:var(--accent);
+}
+.flywheel-v25 .v25-title,.capital-v25 .v25-title {
+  position:absolute;left:64px;top:183px;margin:0;
+  font:400 82px/1.04 var(--font-display);letter-spacing:-.04em;
+}
+.flywheel-v25 .v25-title em,.capital-v25 .v25-title em {font-style:italic;color:var(--accent)}
+.flywheel-v25 .v25-subtitle,.capital-v25 .v25-subtitle {
+  position:absolute;left:67px;top:282px;margin:0;
+  color:#adb7cc;font:400 23px/1.4 var(--font-body);letter-spacing:-.025em;
+}
+.flywheel-v25 .fw-tracks {position:absolute;left:64px;right:64px;top:343px;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.flywheel-v25 .fw-track {position:relative;border-top:1px solid #46577f;padding-top:18px;min-width:0}
+.flywheel-v25 .fw-track-label {display:flex;justify-content:space-between;align-items:baseline;gap:20px;font:500 13px/1.2 var(--font-label);letter-spacing:.09em;color:#8194ff}
+.flywheel-v25 .fw-track-label>span:last-child {color:#7d8ba7;font-size:12px;letter-spacing:.07em}
+.flywheel-v25 .fw-track h3 {margin:14px 0 0;font:400 34px/1.15 var(--font-display);letter-spacing:-.025em}
+.flywheel-v25 .fw-offer {margin:15px 0 0;font:400 24px/1.2 var(--font-body);letter-spacing:-.035em}
+.flywheel-v25 .fw-offer>span {display:block;margin-top:6px;color:#a9b5d0;font:400 20px/1.3 var(--font-body);letter-spacing:-.025em}
+.flywheel-v25 .fw-policy {display:flex;gap:12px;align-items:baseline;margin:16px 0 0;color:#bdc6d9;font:400 19px/1.4 var(--font-body);letter-spacing:-.02em}
+.flywheel-v25 .fw-policy i {display:block;flex:0 0 auto;width:5px;height:5px;border:1px solid #93a3e9;transform:translateY(-2px) rotate(45deg)}
+.flywheel-v25 .fw-builders .fw-policy i {background:#93a3e9;box-shadow:0 0 13px #8194ff66}
+.flywheel-v25 .fw-target {margin:15px 0 0;color:#8996af;font:400 16px/1.4 var(--font-body);letter-spacing:-.015em}
+.flywheel-v25 .fw-target>span {color:#a2aec7}
+.flywheel-v25 .fw-loop {position:absolute;left:64px;right:64px;top:639px;height:193px}
+.flywheel-v25 .fw-loop-label {margin:0;color:#7e8eae;font:500 12px/1.2 var(--font-label);letter-spacing:.12em}
+.flywheel-v25 .fw-loop-lines {position:absolute;left:0;top:0;width:100%;height:186px;overflow:visible}
+.flywheel-v25 .fw-stages {list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;position:absolute;left:0;right:0;top:31px;margin:0;padding:0}
+.flywheel-v25 .fw-stages>li {position:relative;padding-top:27px;padding-right:8px;min-width:0}
+.flywheel-v25 .fw-stages>li>span {position:absolute;left:0;top:4px;padding-right:12px;background:var(--bg);font:500 12px/1.5 var(--font-label);letter-spacing:.08em;color:#8fa2ff}
+.flywheel-v25 .fw-stages h4 {margin:0;font:400 23px/1.17 var(--font-body);letter-spacing:-.035em}
+.flywheel-v25 .fw-stages p {margin:9px 0 0;font:400 15px/1.35 var(--font-body);letter-spacing:-.015em;color:#8493b0}
+.flywheel-v25 .fw-native h4 {color:#b1beff}
+.flywheel-v25 .fw-return-glint {stroke-dasharray:30 970;stroke-dashoffset:0;opacity:.85}
+.flywheel-v25.is-active .fw-return-glint {animation:fw-v25-loop 7s linear infinite}
+.flywheel-v25.is-active .fw-track {animation:fw-v25-enter .8s cubic-bezier(.16,1,.3,1) both}
+.flywheel-v25.is-active .fw-track:nth-child(2) {animation-delay:.12s}
+@keyframes fw-v25-loop {from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@keyframes fw-v25-enter {from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+.capital-v25 .capital-grid {position:absolute;left:64px;right:64px;top:340px;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.capital-v25 .capital-compute {border-top:1px solid #586b9b;padding-top:15px;min-width:0}
+.capital-v25 .capital-main-head {display:flex;justify-content:space-between;align-items:center}
+.capital-v25 .capital-category {margin:0;color:#8c9dc8;font:500 12px/1.2 var(--font-label);letter-spacing:.12em}
+.capital-v25 .capital-main-head h3 {margin:8px 0 0;font:400 70px/.95 var(--font-body);letter-spacing:-.065em}
+.capital-v25 .capital-main-head h3>span {font-size:52px;color:#b3c0e5;letter-spacing:-.05em}
+.capital-v25 .capital-half {margin:0;color:#8194ff;font:400 43px/1 var(--font-body);letter-spacing:-.05em;text-align:right}
+.capital-v25 .capital-half>span {font-size:28px;margin-left:3px}
+.capital-v25 .capital-half small {display:block;margin-top:9px;color:#6f819f;font:500 11px/1.2 var(--font-label);letter-spacing:.1em}
+.capital-v25 .capital-compute-bar {display:grid;grid-template-columns:2.5fr 4.5fr 1fr;gap:4px;height:4px;margin-top:14px}
+.capital-v25 .capital-compute-bar>i {display:block;background:#697cbf;transform-origin:left}
+.capital-v25 .capital-compute-bar>i:nth-child(2) {background:#a3b0ff}
+.capital-v25 .capital-compute-bar>i:nth-child(3) {background:#3f4e78}
+.capital-v25 .capital-workstreams {margin-top:4px}
+.capital-v25 .capital-workstream {display:grid;grid-template-columns:122px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid #202b40}
+.capital-v25 .capital-workstream:last-child {border-bottom:0}
+.capital-v25 .capital-subamount {margin:1px 0 0;color:#c4cceb;font:400 34px/1 var(--font-body);letter-spacing:-.055em}
+.capital-v25 .capital-subamount>span {font-size:23px;margin-left:2px;color:#7f90b5}
+.capital-v25 .capital-native .capital-subamount {color:#a5b4ff}
+.capital-v25 .capital-work-head {display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.capital-v25 .capital-work-head h4 {margin:0;font:400 22px/1.15 var(--font-body);letter-spacing:-.035em;white-space:nowrap}
+.capital-v25 .capital-work-head>span {font:500 11px/1 var(--font-label);letter-spacing:.06em;color:#7f91b9;white-space:nowrap}
+.capital-v25 .capital-workstream>div>p {margin:7px 0 0;color:#8f9cb7;font:400 17px/1.2 var(--font-body);letter-spacing:-.015em}
+.capital-v25 .capital-shipping {display:grid;grid-template-rows:151px 151px 124px;min-width:0}
+.capital-v25 .capital-other {border-top:1px solid #354560;padding-top:14px;min-width:0}
+.capital-v25 .capital-other header {display:flex;justify-content:space-between;align-items:flex-start;gap:18px}
+.capital-v25 .capital-other h3 {margin:9px 0 0;font:400 26px/1 var(--font-display);letter-spacing:-.025em}
+.capital-v25 .capital-amount {margin:1px 0 0;font:400 45px/1 var(--font-body);letter-spacing:-.06em;color:#d0d6e7}
+.capital-v25 .capital-amount>span {font-size:29px;color:#8e9fbe;margin-left:2px}
+.capital-v25 .capital-detail-pair {display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:14px}
+.capital-v25 .capital-detail-pair h4 {margin:0;font:400 17px/1.25 var(--font-body);letter-spacing:-.02em;color:#b7c3dd}
+.capital-v25 .capital-detail-pair p {margin:6px 0 0;color:#8190ac;font:400 15px/1.25 var(--font-body);letter-spacing:-.01em}
+.capital-v25 .capital-ops-detail {margin:14px 0 0;color:#8d9bb5;font:400 17px/1.35 var(--font-body);letter-spacing:-.015em}
+.capital-v25 .capital-inflection {position:absolute;left:64px;right:64px;top:774px;border-top:1px solid #3c4d73;padding-top:12px;display:flex;align-items:baseline;gap:30px}
+.capital-v25 .capital-inflection>span {font:500 12px/1.2 var(--font-label);letter-spacing:.1em;color:#8b9eee;white-space:nowrap}
+.capital-v25 .capital-inflection>p {margin:0;font:400 18px/1.3 var(--font-body);letter-spacing:-.02em;color:#b6c2db}
+.capital-v25 .capital-inflection i {margin:0 10px;color:#6276ac;font-style:normal}
+.capital-v25.is-active .capital-compute-bar>i {animation:capital-v25-grow 1.1s cubic-bezier(.16,1,.3,1) both}
+.capital-v25.is-active .capital-other {animation:fw-v25-enter .8s cubic-bezier(.16,1,.3,1) both}
+.capital-v25.is-active .capital-other:nth-child(2) {animation-delay:.12s}
+.capital-v25.is-active .capital-other:nth-child(3) {animation-delay:.24s}
+@keyframes capital-v25-grow {from{transform:scaleX(0)}to{transform:scaleX(1)}}
+#deck.motion-paused .flywheel-v25 *,#deck.motion-paused .capital-v25 * {animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce) {#deck:not(.motion-enabled) .flywheel-v25 *,#deck:not(.motion-enabled) .capital-v25 * {animation:none!important}}
+@media print {.flywheel-v25 *,.capital-v25 * {animation:none!important}}

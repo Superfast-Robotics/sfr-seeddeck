@@ -1,0 +1,12 @@
+/* Only the expanded business chapter; slides 01–14 and closing stay locked. */
+.partners-v25 .commercial-partners {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:76px;
+}
+.partners-v25 .commercial-lane { padding-top:24px; }
+.partners-v25 .commercial-lane h3 { font-size:62px; }
+.partners-v25 .lane-discussion { font-size:32px; }
+.partners-v25 .lane-prospects { font-size:23px; line-height:1.5; }
+.partners-v25 .lane-prospects-label { margin-top:23px; }
+.revenue-v25 .ev-assumptions { line-height:1.55; }
+.ask-v25 .ask-fund:first-child .ask-fund-detail { font-size:16px; line-height:1.3; }
