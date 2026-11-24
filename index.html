@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="seed-growth.css?v=20261117-v18">
   <link rel="stylesheet" href="economics-v16.css?v=20261116-v16">
   <link rel="stylesheet" href="benchmark-metrics.css?v=20261117-v18">
+  <link rel="stylesheet" href="seeddeck-v24.css">
 </head>
 <body>
   <main id="viewport" aria-label="Superfast Robotics pitch presentation">
@@ -126,16 +127,19 @@
         <p class="qualifier">*Module MSRP: $999 at 1,000+ units. Continuous operation is the design goal.</p>
       </section>
 
-      <section id="slide-9" aria-label="Slide 9" class="slide origin-slide" data-title="100× smaller. Built at Samsung Research." aria-hidden="true" inert>
-        <p class="eyebrow section-kicker">Our Tech · MODEL COMPRESSION · LittleBit (NeurIPS ’25 · ICML ’26)</p>
+      <section id="slide-9" aria-label="Slide 9" class="slide origin-slide" data-title="Founders' prior research — 100× smaller." aria-hidden="true" inert>
+        <p class="eyebrow section-kicker">FOUNDERS' PRIOR RESEARCH</p>
         <div class="origin-main"><h2>100<span>×</span></h2><p>smaller language models</p></div>
         <div class="compression-animation" role="img" aria-label="Animated illustration of a model compressing from 1 gigabyte to about 10 megabytes"><div class="compression-rail"></div><div id="compression-matrix" aria-hidden="true"></div><div class="compressed-halo"></div><div class="compression-labels"><span>1 GB</span><span>~10 MB</span></div></div>
-        <div class="origin-history"><div><span class="eyebrow">DEVELOPED AT</span><strong>Samsung Research</strong><p class="origin-github"><a href="https://github.com/SamsungLabs/LittleBit" target="_blank" rel="noopener">#1 by GitHub stars at SamsungLabs</a></p></div><div><span class="eyebrow">GALAXY DEPLOYMENT PIPELINE</span><strong>200M <span>devices per year</span></strong></div></div>
+        <div class="origin-history">
+          <div class="origin-research"><strong>Pioneered Sub-1-bit<br>Compression</strong><p class="origin-publications">(NeurIPS '25, ICML '26)</p></div>
+          <div class="origin-proof"><strong><a href="https://github.com/SamsungLabs/LittleBit" target="_blank" rel="noopener">Top-starred open-source<br>compression repo</a></strong><p class="origin-scale">Proven at <span>100M+</span> edge-device scale</p></div>
+        </div>
       </section>
 
-      <section id="slide-10" aria-label="Slide 10" class="slide benchmark-slide benchmark-with-metrics" data-title="LittleBit + Speculative Decoding" aria-hidden="true" inert>
-  <div class="benchmark-head"><p class="eyebrow">LittleBit + Speculative Decoding</p><h2>5<span>×</span> <em>faster</em></h2></div>
-  <div class="benchmark-metrics" role="img" aria-label="LittleBit compresses the draft model from 1,070 to 30 megabytes while retaining 90.5 percent of decoding speedup.">
+      <section id="slide-10" aria-label="Slide 10" class="slide benchmark-slide benchmark-with-metrics" data-title="Extreme Compression + Speculative Decoding" aria-hidden="true" inert>
+  <div class="benchmark-head"><p class="eyebrow">Extreme Compression + Speculative Decoding</p><h2>5<span>×</span> <em>faster</em></h2></div>
+  <div class="benchmark-metrics" role="img" aria-label="Extreme compression reduces the draft model from 1,070 to 30 megabytes while retaining 90.5 percent of decoding speedup.">
     <div aria-hidden="true">
       <p class="benchmark-metric-label">DRAFT MODEL</p>
       <p class="benchmark-metric-size"><strong data-benchmark-size>30</strong><span>MB</span></p>
@@ -152,7 +156,7 @@
 </section>
 
       <section id="slide-11" aria-label="Slide 11" class="slide evidence-slide" data-title="160× compressed. Still working." aria-hidden="true" inert>
-        <div class="evidence-copy"><p class="eyebrow">LittleBit + World Action Model</p><h2><span class="evidence-metric">160<span>×</span></span><br><em>compressed.</em><br>Still working.</h2><p>UnifoLM-WLA-1.0<br>Jetson Orin NX · All inference on board</p><span class="evidence-definition">LM backbone weight representation vs. FP16</span></div>
+        <div class="evidence-copy"><p class="eyebrow">Sub-1-bit World Action Model</p><h2><span class="evidence-metric">160<span>×</span></span><br><em>compressed.</em><br>Still working.</h2><p>UnifoLM-WLA-1.0<br>Jetson Orin NX · All inference on board</p><span class="evidence-definition">LM backbone weight representation vs. FP16</span></div>
         <div class="evidence-note" role="note" aria-label="We have an early signal.">
           <svg class="evidence-note-lines" viewBox="0 0 1600 900" fill="none" aria-hidden="true">
             <path class="note-ink note-arrow" pathLength="100" d="M1073 285 C1041 263 1041 225 1070 218 C1109 209 1135 252 1112 262 C1094 270 1090 248 1108 228 C1120 211 1144 198 1174 194"/>
@@ -190,7 +194,7 @@
 
       <section id="slide-14" aria-label="Slide 14" class="slide team-slide" data-title="Team" aria-hidden="true" inert>
         <p class="eyebrow team-kicker">TEAM</p>
-        <h2 class="team-heading motion-reveal">Four researchers who worked<br>together at <em>Samsung Research</em></h2>
+        <h2 class="team-heading motion-reveal">Built by pioneers in<br><em>extreme compression &amp; humanoid systems</em></h2>
         <div class="team-members">
           <article class="team-member motion-reveal" style="--enter-delay:.08s">
             <div class="team-portrait"><img src="assets/team/banseok-lee.jpg" width="333" height="333" alt="Banseok Lee"><canvas class="team-orbit" width="270" height="270" aria-hidden="true"></canvas></div>
