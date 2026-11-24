@@ -1,0 +1,37 @@
+/* v29: scoped content refinements and appendix markers. */
+.appendix-slide .appendix-tag {
+  position:absolute;right:64px;top:63px;margin:0;
+  color:#8e9bb7;font:500 12px/1.4 var(--font-label);letter-spacing:.11em;
+}
+.evidence-v29 .source-speed-mask {
+  position:absolute;left:85.15%;top:20.6%;width:10.1%;height:4.9%;
+  display:block;background:#000;z-index:2;pointer-events:none;
+}
+.flywheel-v29 .fw-stages h4 {font-size:23px;}
+.partners-v29 .commercial-partners {top:310px;}
+.partners-v29 .lane-prospects-label {margin-top:20px;}
+.partners-v29 .wam-targets {display:grid;gap:12px;margin-top:12px;}
+.partners-v29 .wam-targets>div {display:grid;grid-template-columns:145px minmax(0,1fr);gap:16px;align-items:baseline;}
+.partners-v29 .target-group-label {
+  display:block;color:#7887a5;font:500 11px/1.2 var(--font-label);letter-spacing:.09em;
+}
+.partners-v29 .wam-targets p {
+  margin-top:0;color:#bbc4d9;font:400 22px/1.35 var(--font-body);letter-spacing:-.02em;
+}
+.partners-v29 .commercial-stack {top:751px;height:43px;}
+.revenue-v29 .ev-year {height:244px;padding-top:23px;}
+.revenue-v29 .ev-year h3 {margin-top:20px;}
+.revenue-v29 .ev-revenue-mix {
+  margin-top:20px;color:#7f8dab;font:400 19px/1.3 var(--font-body);letter-spacing:-.02em;
+}
+.revenue-v29 .ev-revenue-mix b {font-weight:400;color:#c4cde0;}
+.revenue-v29 .ev-revenue-mix i {font-style:normal;color:var(--accent);margin:0 5px;}
+.revenue-v29 .ev-volume {margin-top:10px;color:#9ba8c0;font:400 16px/1.3 var(--font-body);}
+.revenue-v29 .ev-bottom {top:687px;padding-top:22px;}
+.revenue-v29 .ev-breakeven strong {font-size:68px;}
+.ask-v29 .ask-allocation-meter i:nth-child(2) {flex:4;}
+.ask-v29 .ask-allocation-meter i:nth-child(4) {flex:2;}
+.ask-v29 .ask-timeline .ask-target {max-width:320px;}
+.ask-v29 .ask-model-goal {white-space:nowrap;}
+.capital-v29 .capital-native .capital-work-head h4 {font-size:21px;}
+.capital-v29 .capital-inflection>p {font-size:17px;}
